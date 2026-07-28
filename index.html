@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gusti Izza Ardiansyah Alba'i — Siswa RPL SMK Krian 1 Sidoarjo</title>
+  <meta name="description" content="Portofolio pribadi Gusti Izza Ardiansyah Alba'i, siswa SMK Krian 1 Sidoarjo jurusan Rekayasa Perangkat Lunak (RPL). Berisi profil, skill, project, dan pengalaman PKL." />
+  <meta name="keywords" content="Gusti Izza Ardiansyah Alba'i, RPL, SMK Krian 1 Sidoarjo, Rekayasa Perangkat Lunak, Portofolio, Web Developer" />
+  <meta name="author" content="Gusti Izza Ardiansyah Alba'i" />
+  <meta name="theme-color" content="#08080f" />
+
+  <meta property="og:title" content="Gusti Izza Ardiansyah Alba'i — Portofolio Siswa RPL" />
+  <meta property="og:description" content="Siswa SMK Krian 1 Sidoarjo jurusan Rekayasa Perangkat Lunak yang sedang belajar dan berkarya di dunia web development." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-mark">G</div>
+  </div>
+
+  <a href="#home" class="skip-link">Lompat ke konten utama</a>
+
+  <header>
+    <nav class="navbar" id="navbar" aria-label="Navigasi utama">
+      <div class="nav-inner">
+        <a href="#home" class="logo" aria-label="Gusti - Beranda">
+          <span class="logo-mark" aria-hidden="true">G</span>
+          <span class="logo-text">Gusti</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active-link" data-section="home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-section="about">Tentang Saya</a></li>
+          <li><a href="#skills" class="nav-link" data-section="skills">Skill</a></li>
+          <li><a href="#projects" class="nav-link" data-section="projects">Project</a></li>
+          <li><a href="#experience" class="nav-link" data-section="experience">Pengalaman</a></li>
+          <li><a href="#growth" class="nav-link" data-section="growth">Pengembangan Diri</a></li>
+          <li><a href="#certificates" class="nav-link" data-section="certificates">Sertifikat</a></li>
+          <li><a href="#contact" class="nav-link" data-section="contact">Kontak</a></li>
+        </ul>
+
+        <button class="hamburger" id="hamburger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+
+    <section class="hero" aria-label="Perkenalan">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="hero-container reveal">
+        <div class="hero-text">
+          <p class="eyebrow">👋 Halo, perkenalkan saya</p>
+          <h1 class="hero-name">Gusti Izza <span class="gradient-text">Ardiansyah Alba'i</span></h1>
+          <p class="hero-status">Siswa SMK Krian 1 | Rekayasa Perangkat Lunak</p>
+          <h2 class="hero-headline">
+            <span id="typingText" aria-hidden="true"></span><span class="cursor" aria-hidden="true">|</span>
+          </h2>
+          <p class="sr-only">Junior Web Developer & Siswa RPL</p>
+
+          <p class="hero-desc">
+            Siswa SMK Krian 1 Sidoarjo jurusan Rekayasa Perangkat Lunak (RPL) dengan minat pada
+            pengembangan website dan desain antarmuka pengguna. Terus belajar dan mengasah kemampuan
+            melalui project serta pengalaman Praktik Kerja Lapangan (PKL).
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <span>Lihat Project</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="photo-frame">
+            <div class="photo-glow" aria-hidden="true"></div>
+            <img src="asset/foto-profil.jpg" alt="Foto profil Gusti Izza Ardiansyah Alba'i" class="profile-photo" loading="eager"/>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Gulir ke bawah">
+        <span></span>
+      </a>
+    </section>
+
+    <section id="about" class="section about-section" aria-label="Tentang saya">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">Tentang Saya</p>
+        <h2 class="section-title reveal">Mengenal Lebih Dekat</h2>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Saya merupakan siswa <strong>SMK Krian 1 Sidoarjo</strong> jurusan
+              <strong> Rekayasa Perangkat Lunak (RPL)</strong> yang memiliki minat dalam bidang teknologi
+              informasi, khususnya pengembangan website dan desain antarmuka pengguna.
+            </p>
+            <p>
+              Saya terus mengembangkan kemampuan teknis melalui proses pembelajaran, pengerjaan berbagai
+              project, serta pengalaman Praktik Kerja Lapangan (PKL). Saya memiliki semangat untuk
+              mempelajari teknologi baru dan meningkatkan kemampuan di bidang pengembangan perangkat lunak.
+            </p>
+
+            <div class="about-info">
+              <div class="info-item">
+                <span class="info-label">Nama</span>
+                <span class="info-value">Gusti Izza Ardiansyah Alba'i</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Sekolah</span>
+                <span class="info-value">SMK Krian 1 Sidoarjo</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Jurusan</span>
+                <span class="info-value">Rekayasa Perangkat Lunak (RPL)</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Minat</span>
+                <span class="info-value">Web Development & UI/UX Design</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Tujuan Karier</span>
+                <span class="info-value">Software / Web Developer</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Profesi</span>
+                <span class="info-value">Siswa SMK / Junior Web Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card-wrap reveal">
+            <div class="glass-card education-card">
+              <div class="edu-icon" aria-hidden="true">🎓</div>
+              <h3>Pendidikan</h3>
+              <p class="edu-major">Rekayasa Perangkat Lunak</p>
+              <p class="edu-school">SMK Krian 1 Sidoarjo</p>
+              <div class="divider"></div>
+              <p class="edu-note">
+                Mempelajari pemrograman web, basis data, algoritma, serta praktik langsung melalui
+                proyek dan Praktik Kerja Lapangan (PKL).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section" aria-label="Keahlian">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">Keahlian</p>
+        <h2 class="section-title reveal">Skill & Tools</h2>
+        <p class="section-subtitle reveal">Kemampuan yang sedang terus saya pelajari dan asah.</p>
+
+        <div class="skills-grid">
+          <div class="skill-card glass-card reveal" data-level="70">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">🌐</span>
+              <span class="skill-name">HTML</span>
+              <span class="skill-percent">70%</span>
+            </div>
+            <p class="skill-desc">Menyusun struktur halaman web menggunakan HTML semantik.</p>
+            <div class="progress-track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="HTML 70 persen">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card reveal" data-level="65">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">🎨</span>
+              <span class="skill-name">CSS</span>
+              <span class="skill-percent">65%</span>
+            </div>
+            <p class="skill-desc">Mendesain tampilan responsif dan animasi sederhana.</p>
+            <div class="progress-track" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="CSS 65 persen">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card reveal" data-level="55">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">⚡</span>
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-percent">55%</span>
+            </div>
+            <p class="skill-desc">Menambahkan interaksi dasar dan logika pada halaman web.</p>
+            <div class="progress-track" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript 55 persen">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card reveal" data-level="50">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">🐘</span>
+              <span class="skill-name">PHP</span>
+              <span class="skill-percent">50%</span>
+            </div>
+            <p class="skill-desc">Membuat logika sisi server untuk aplikasi web sederhana.</p>
+            <div class="progress-track" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="PHP 50 persen">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card reveal" data-level="50">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">🗄️</span>
+              <span class="skill-name">MySQL</span>
+              <span class="skill-percent">50%</span>
+            </div>
+            <p class="skill-desc">Merancang dan mengelola basis data relasional dasar.</p>
+            <div class="progress-track" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="MySQL 50 persen">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card reveal" data-level="60">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">🖌️</span>
+              <span class="skill-name">UI/UX Design</span>
+              <span class="skill-percent">60%</span>
+            </div>
+            <p class="skill-desc">Merancang antarmuka yang sederhana, rapi, dan mudah digunakan.</p>
+            <div class="progress-track" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="UI/UX Design 60 persen">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card reveal" data-level="65">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">📱</span>
+              <span class="skill-name">Responsive Web Design</span>
+              <span class="skill-percent">65%</span>
+            </div>
+            <p class="skill-desc">Menyesuaikan tampilan website pada berbagai ukuran layar.</p>
+            <div class="progress-track" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Responsive Web Design 65 persen">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card reveal" data-level="55">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">🔧</span>
+              <span class="skill-name">Git & GitHub</span>
+              <span class="skill-percent">55%</span>
+            </div>
+            <p class="skill-desc">Mengelola versi kode dan menyimpan project secara terstruktur.</p>
+            <div class="progress-track" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="Git dan GitHub 55 persen">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section" aria-label="Proyek">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">Portofolio</p>
+        <h2 class="section-title reveal">Project</h2>
+        <p class="section-subtitle reveal">Beberapa project yang telah saya kerjakan untuk mengasah kemampuan.</p>
+
+        <div class="projects-grid">
+
+          <article class="project-card glass-card reveal">
+            <div class="project-thumb" style="background: linear-gradient(135deg,#7c5cff 0%,#3b82f6 100%);">
+              <span class="project-thumb-icon" aria-hidden="true">🏫</span>
+            </div>
+            <div class="project-body">
+              <h3>Website Sekolah Modern</h3>
+              <p>Website profil sekolah dengan tampilan modern, informasi akademik, dan galeri kegiatan yang responsif.</p>
+              <ul class="tech-tags">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="link-btn">Lihat Project</a>
+                <a href="#" class="link-btn link-btn-outline">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal">
+            <div class="project-thumb" style="background: linear-gradient(135deg,#8b5cf6 0%,#22d3ee 100%);">
+              <span class="project-thumb-icon" aria-hidden="true">🧾</span>
+            </div>
+            <div class="project-body">
+              <h3>Aplikasi Kasir</h3>
+              <p>Aplikasi kasir sederhana untuk mencatat transaksi penjualan dan mengelola data barang.</p>
+              <ul class="tech-tags">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>MySQL</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="link-btn">Lihat Project</a>
+                <a href="#" class="link-btn link-btn-outline">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal">
+            <div class="project-thumb" style="background: linear-gradient(135deg,#6d5bff 0%,#7c3aed 100%);">
+              <span class="project-thumb-icon" aria-hidden="true">🎯</span>
+            </div>
+            <div class="project-body">
+              <h3>Landing Page Kreatif</h3>
+              <p>Landing page dengan layout modern, animasi scroll yang halus, dan tampilan yang menarik.</p>
+              <ul class="tech-tags">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="link-btn">Lihat Project</a>
+                <a href="#" class="link-btn link-btn-outline">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal">
+            <div class="project-thumb" style="background: linear-gradient(135deg,#2563eb 0%,#22d3ee 100%);">
+              <span class="project-thumb-icon" aria-hidden="true">⛅</span>
+            </div>
+            <div class="project-body">
+              <h3>Weather Dashboard</h3>
+              <p>Dashboard cuaca yang menampilkan suhu, kelembapan, dan prakiraan cuaca menggunakan API.</p>
+              <ul class="tech-tags">
+                <li>JavaScript</li><li>API</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="link-btn">Lihat Project</a>
+                <a href="#" class="link-btn link-btn-outline">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal">
+            <div class="project-thumb" style="background: linear-gradient(135deg,#0ea5e9 0%,#7c5cff 100%);">
+              <span class="project-thumb-icon" aria-hidden="true">💧</span>
+            </div>
+            <div class="project-body">
+              <h3>Water Level & Quality Monitoring System</h3>
+              <p>Sistem pemantauan ketinggian dan kualitas air secara real-time menggunakan sensor dan mikrokontroler.</p>
+              <ul class="tech-tags">
+                <li>ESP32</li><li>Sensor TDS</li><li>Sensor Ultrasonic</li><li>LCD</li><li>Blynk</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="link-btn">Lihat Project</a>
+                <a href="#" class="link-btn link-btn-outline">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience-section" aria-label="Pengalaman">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">Pengalaman</p>
+        <h2 class="section-title reveal">Praktik Kerja Lapangan (PKL)</h2>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">[Periode PKL]</span>
+              <h3>[Nama Tempat PKL — Klinik/Puskesmas]</h3>
+              <p class="timeline-place">Bagian Administrasi & Pendaftaran</p>
+              <p>
+                Selama PKL, saya membantu proses administrasi dan pendaftaran pasien, mengelola dan
+                memeriksa data, serta membantu proses pelayanan administrasi. Saya juga belajar
+                berkomunikasi dengan lingkungan kerja, bekerja sama dengan tim, dan memahami alur
+                kerja administrasi pelayanan kesehatan.
+              </p>
+              <div class="timeline-tags">
+                <span>Administrasi</span>
+                <span>Pendaftaran Pasien</span>
+                <span>Pengelolaan Data</span>
+                <span>Kerja Tim</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="growth" class="section growth-section" aria-label="Pengembangan diri">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">Terus Belajar</p>
+        <h2 class="section-title reveal">Pengembangan Diri</h2>
+        <p class="section-subtitle reveal">Aktivitas belajar yang sedang saya jalani untuk mengembangkan kemampuan.</p>
+
+        <div class="growth-grid">
+          <div class="growth-card glass-card reveal">
+            <span class="growth-icon" aria-hidden="true">💻</span>
+            <p>Mempelajari pengembangan website</p>
+          </div>
+          <div class="growth-card glass-card reveal">
+            <span class="growth-icon" aria-hidden="true">🧩</span>
+            <p>Mempelajari HTML, CSS, dan JavaScript</p>
+          </div>
+          <div class="growth-card glass-card reveal">
+            <span class="growth-icon" aria-hidden="true">🗃️</span>
+            <p>Mempelajari PHP dan MySQL</p>
+          </div>
+          <div class="growth-card glass-card reveal">
+            <span class="growth-icon" aria-hidden="true">🚀</span>
+            <p>Mengerjakan project untuk meningkatkan kemampuan pemrograman</p>
+          </div>
+          <div class="growth-card glass-card reveal">
+            <span class="growth-icon" aria-hidden="true">🎨</span>
+            <p>Mempelajari UI/UX Design</p>
+          </div>
+          <div class="growth-card glass-card reveal">
+            <span class="growth-icon" aria-hidden="true">📘</span>
+            <p>Mengembangkan kemampuan melalui tugas dan project sekolah</p>
+          </div>
+          <div class="growth-card glass-card reveal">
+            <span class="growth-icon" aria-hidden="true">🔍</span>
+            <p>Terus mempelajari teknologi baru di bidang IT</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="section certificates-section" aria-label="Sertifikat">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">Pencapaian</p>
+        <h2 class="section-title reveal">Sertifikat</h2>
+
+        <div class="glass-card empty-state reveal">
+          <span class="empty-icon" aria-hidden="true">📄</span>
+          <p>Belum ada sertifikat yang ditampilkan. Section ini akan diperbarui seiring dengan
+             bertambahnya pengalaman dan sertifikasi.</p>
+        </div>
+
+        <div class="certificates-grid">
+          <div class="certificate-card glass-card reveal">
+            <span class="cert-placeholder-icon" aria-hidden="true">＋</span>
+            <p>[Nama Sertifikat]</p>
+            <span class="cert-note">[Penyelenggara — Tahun]</span>
+          </div>
+          <div class="certificate-card glass-card reveal">
+            <span class="cert-placeholder-icon" aria-hidden="true">＋</span>
+            <p>[Nama Sertifikat]</p>
+            <span class="cert-note">[Penyelenggara — Tahun]</span>
+          </div>
+          <div class="certificate-card glass-card reveal">
+            <span class="cert-placeholder-icon" aria-hidden="true">＋</span>
+            <p>[Nama Sertifikat]</p>
+            <span class="cert-note">[Penyelenggara — Tahun]</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section" aria-label="Kontak">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">Hubungi Saya</p>
+        <h2 class="section-title reveal">Mari Terhubung</h2>
+        <p class="section-subtitle reveal">Punya pertanyaan, ide kolaborasi, atau ingin sekadar menyapa? Kirim pesan melalui form di bawah.</p>
+
+        <div class="contact-grid">
+          <form class="contact-form glass-card reveal" id="contactForm" action="https://formspree.io/f/xwvgykaz" method="POST">
+            <div class="form-group">
+              <label for="name">Nama</label>
+              <input type="text" id="name" name="name" placeholder="Nama lengkap kamu" required autocomplete="name" />
+              <span class="field-error" id="nameError" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="_replyto" placeholder="nama@email.com" required autocomplete="email" />
+              <span class="field-error" id="emailError" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tulis pesan kamu di sini..." required></textarea>
+              <span class="field-error" id="messageError" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Kirim Pesan</span>
+            </button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="contact-side reveal">
+            <div class="glass-card contact-info-card">
+              <h3>Kontak</h3>
+              <a href="mailto:gustiizza9@gmail.com" class="contact-info-item">
+                <span aria-hidden="true">✉️</span>
+                <span>gustiizza9@gmail.com</span>
+              </a>
+              <a href="https://wa.me/085806205608" class="contact-info-item">
+                <span aria-hidden="true">📱</span>
+                <span>+62 85806205608</span>
+              </a>
+            </div>
+
+            <div class="glass-card social-card">
+              <h3>Sosial Media</h3>
+              <div class="social-links">
+                <a href="https://github.com/GustiGlinera" class="social-link" aria-label="GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.5 0 12.3c0 5.44 3.44 10.05 8.21 11.68.6.12.82-.27.82-.6 0-.29-.01-1.06-.02-2.08-3.34.75-4.04-1.66-4.04-1.66-.55-1.43-1.34-1.82-1.34-1.82-1.09-.77.08-.75.08-.75 1.21.09 1.85 1.28 1.85 1.28 1.07 1.88 2.8 1.34 3.49 1.02.11-.79.42-1.34.76-1.65-2.67-.31-5.47-1.36-5.47-6.03 0-1.33.46-2.42 1.22-3.28-.12-.31-.53-1.56.12-3.24 0 0 1-.33 3.3 1.25a11.2 11.2 0 0 1 6 0c2.28-1.58 3.29-1.25 3.29-1.25.65 1.68.24 2.93.12 3.24.76.86 1.22 1.95 1.22 3.28 0 4.68-2.81 5.71-5.49 6.02.43.38.81 1.13.81 2.28 0 1.64-.01 2.97-.01 3.37 0 .33.22.72.83.6C20.57 22.34 24 17.74 24 12.3 24 5.5 18.63 0 12 0Z"/></svg>
+                  <span>github.com/GustiGlinera</span>
+                </a>
+                <a href="https://instagram.com/glinera16" class="social-link" aria-label="Instagram">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.05.41 2.23.06 1.27.07 1.64.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.05.36-2.23.41-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.05-.41-2.23-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.05-.36 2.23-.41 1.27-.06 1.64-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.9 5.9 0 0 0-2.13 1.38A5.9 5.9 0 0 0 .63 4.14c-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.66 1.34 1.07 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.13-1.38 5.9 5.9 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.13A5.9 5.9 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44Z"/></svg>
+                  <span>instagram.com/glinera16</span>
+                </a>
+                <a href="https://linkedin.com/in/username" class="social-link" aria-label="LinkedIn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45C23.2 24 24 23.22 24 22.25V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+                  <span>linkedin.com/in/username</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-mark" aria-hidden="true">G</span>
+        <span>Gusti Izza Ardiansyah Alba'i</span>
+      </div>
+      <p class="footer-text">Terus belajar, berkembang, dan berkarya.</p>
+
+      <div class="footer-social">
+        <a href="https://github.com/GustiGlinera" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.5 0 12.3c0 5.44 3.44 10.05 8.21 11.68.6.12.82-.27.82-.6 0-.29-.01-1.06-.02-2.08-3.34.75-4.04-1.66-4.04-1.66-.55-1.43-1.34-1.82-1.34-1.82-1.09-.77.08-.75.08-.75 1.21.09 1.85 1.28 1.85 1.28 1.07 1.88 2.8 1.34 3.49 1.02.11-.79.42-1.34.76-1.65-2.67-.31-5.47-1.36-5.47-6.03 0-1.33.46-2.42 1.22-3.28-.12-.31-.53-1.56.12-3.24 0 0 1-.33 3.3 1.25a11.2 11.2 0 0 1 6 0c2.28-1.58 3.29-1.25 3.29-1.25.65 1.68.24 2.93.12 3.24.76.86 1.22 1.95 1.22 3.28 0 4.68-2.81 5.71-5.49 6.02.43.38.81 1.13.81 2.28 0 1.64-.01 2.97-.01 3.37 0 .33.22.72.83.6C20.57 22.34 24 17.74 24 12.3 24 5.5 18.63 0 12 0Z"/></svg>
+        </a>
+        <a href="https://instagram.com/glinera16" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.05.41 2.23.06 1.27.07 1.64.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.05.36-2.23.41-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.05-.41-2.23-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.05-.36 2.23-.41 1.27-.06 1.64-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.9 5.9 0 0 0-2.13 1.38A5.9 5.9 0 0 0 .63 4.14c-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.66 1.34 1.07 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.13-1.38 5.9 5.9 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.13A5.9 5.9 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44Z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/username" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45C23.2 24 24 23.22 24 22.25V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+        </a>
+      </div>
+
+      <p class="footer-copy">&copy; <span id="year"></span> Gusti Izza Ardiansyah Alba'i. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
